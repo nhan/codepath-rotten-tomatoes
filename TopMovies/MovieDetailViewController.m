@@ -7,26 +7,38 @@
 //
 
 #import "MovieDetailViewController.h"
+#import "UIImageView+AFNetworking.h"
+
 
 @interface MovieDetailViewController ()
-
+@property (nonatomic, strong) Movie* movie;
+@property (weak, nonatomic) IBOutlet UIImageView *bigPosterView;
+@property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
+@property (weak, nonatomic) IBOutlet UILabel *castLabel;
 @end
 
 @implementation MovieDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype) initWithMovie:(Movie *)movie
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
+
     if (self) {
-        // Custom initialization
+        self.movie = movie;
+        self.title = movie.title;
     }
+
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.synopsisLabel.text = self.movie.synopsis;
+    self.castLabel.text = [self.movie.cast componentsJoinedByString:@", "];
+    [self.synopsisLabel sizeToFit];
+    [self.castLabel sizeToFit];
+    [self.bigPosterView setImageWithURL:self.movie.bigPosterURL];
 }
 
 - (void)didReceiveMemoryWarning

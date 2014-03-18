@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface MovieDetailViewController : UIViewController
-
+- (instancetype) initWithMovie:(Movie *)movie;
 @end
