@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bigPosterView;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
 @property (weak, nonatomic) IBOutlet UILabel *castLabel;
+@property (weak, nonatomic) UIImage* placeholderImage;
 @end
 
 @implementation MovieDetailViewController
@@ -27,6 +28,8 @@
         self.movie = movie;
         self.title = movie.title;
     }
+    
+    self.placeholderImage = [UIImage imageNamed:@"placeholder_big.gif"];
 
     return self;
 }
@@ -38,7 +41,7 @@
     self.castLabel.text = [self.movie.cast componentsJoinedByString:@", "];
     [self.synopsisLabel sizeToFit];
     [self.castLabel sizeToFit];
-    [self.bigPosterView setImageWithURL:self.movie.bigPosterURL];
+    [self.bigPosterView setImageWithURL:self.movie.bigPosterURL placeholderImage:self.placeholderImage];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		35F29A44C7F8433C9ED58E76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A54AE318E945EEB65C5D9B /* libPods.a */; };
+		6B179D4F18D904670029AEDB /* placeholder_big.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B179D4D18D904670029AEDB /* placeholder_big.gif */; };
+		6B179D5018D904670029AEDB /* placeholder_small.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B179D4E18D904670029AEDB /* placeholder_small.gif */; };
 		6BDB4CCD18D7B43A000F795C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB4CCC18D7B43A000F795C /* Foundation.framework */; };
 		6BDB4CCF18D7B43A000F795C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB4CCE18D7B43A000F795C /* CoreGraphics.framework */; };
 		6BDB4CD118D7B43A000F795C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDB4CD018D7B43A000F795C /* UIKit.framework */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B179D4D18D904670029AEDB /* placeholder_big.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = placeholder_big.gif; path = ../../../Downloads/placeholder_big.gif; sourceTree = "<group>"; };
+		6B179D4E18D904670029AEDB /* placeholder_small.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = placeholder_small.gif; path = ../../../Downloads/placeholder_small.gif; sourceTree = "<group>"; };
 		6BDB4CC918D7B43A000F795C /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDB4CCC18D7B43A000F795C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6BDB4CCE18D7B43A000F795C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +140,8 @@
 				6BDB4CDB18D7B43A000F795C /* AppDelegate.h */,
 				6BDB4CDC18D7B43A000F795C /* AppDelegate.m */,
 				6BDB4CDE18D7B43A000F795C /* Images.xcassets */,
+				6B179D4D18D904670029AEDB /* placeholder_big.gif */,
+				6B179D4E18D904670029AEDB /* placeholder_small.gif */,
 				6BDB4CD318D7B43A000F795C /* Supporting Files */,
 				6BDB4D1718D8DD6B000F795C /* Models */,
 			);
@@ -283,8 +289,10 @@
 				6BDB4D0D18D7BF88000F795C /* MovieDetailViewController.xib in Resources */,
 				6BDB4CD718D7B43A000F795C /* InfoPlist.strings in Resources */,
 				6BDB4D0518D7BE85000F795C /* MoviesViewController.xib in Resources */,
+				6B179D5018D904670029AEDB /* placeholder_small.gif in Resources */,
 				6BDB4D1018D7D3E3000F795C /* MovieCellView.xib in Resources */,
 				6BDB4CDF18D7B43A000F795C /* Images.xcassets in Resources */,
+				6B179D4F18D904670029AEDB /* placeholder_big.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
